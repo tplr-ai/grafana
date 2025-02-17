@@ -1,7 +1,6 @@
 .env.yaml
 .env
 *.pth
-env/
 
 # Python
 __pycache__/
@@ -75,4 +74,3 @@ rogue/
 test_output.txt
 neurons/validator_old.py
 model_state.pt
-.github

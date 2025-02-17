@@ -22,14 +22,10 @@ dependencies = [
     "wandb",
     "python-dotenv",
     "zstandard",
-    "Flask==2.2.2",
-    "Flask-SQLAlchemy==2.5.1",
-    "Flask-Migrate==3.1.0",
-    "asyncio==3.4.3",
-    "werkzeug==2.2.3",
     "s3fs",
     "pyarrow",
     "scipy"
+
 ]
 
 [project.optional-dependencies]
@@ -43,7 +39,6 @@ dev = [
     "pandas",
     "matplotlib",
     "seaborn",
-    "pytest-asyncio",
     "ruff",
     "pytest-xdist"
 

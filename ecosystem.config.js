@@ -15,8 +15,8 @@ module.exports = {
             args: `--wallet.name Bistro --wallet.hotkey M3 --device cuda:3 --subtensor.network local --netuid 2 --use_wandb --project "${PROJECT_NAME}"`
         },
         {
-            name: "RAT",
-            script: "neurons/rat.py",
+            name: "TM2",
+            script: "neurons/miner.py",
             interpreter: "python3",
             env: {
                 ...process.env,
