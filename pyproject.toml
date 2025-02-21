@@ -67,3 +67,6 @@ filterwarnings = [
     "default::RuntimeWarning",
     "default::UserWarning",
 ]
+
+[tool.uv]
+prerelease = "allow"
