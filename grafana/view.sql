@@ -83,7 +83,8 @@ ORDER BY cc.miner_id;
 CREATE VIEW v_window_info AS
 SELECT
   window_time,
-  learning_rate
+  learning_rate,
+  global_step
 FROM
   tbl_window_info aa
 JOIN tbl_version bb ON aa.id >= bb.window_id and bb.is_running = true

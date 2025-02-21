@@ -53,11 +53,14 @@ def get_tplr_version():
         print("Failed to fetch file.")
 
 def update_current_version(current_version, old_version_record, created_at):
+    window_id = 1
+    if WindowInfo.get_last():
+        window_id = WindowInfo.get_last().id+1
     # Create a new version record
     new_window_info = Version(
         version=current_version,
         created_at=created_at,  # current timestamp
-        window_id=WindowInfo.get_last().id+1,
+        window_id=window_id,
     )
     db.session.add(new_window_info)
 
